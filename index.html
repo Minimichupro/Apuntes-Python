@@ -60,6 +60,66 @@
         </div>
         
         <div class="desplegable">
+            <button class="boton-desplegable">DEF (FUNCIONES)</button>
+
+            <div class="contenido-desplegable">
+                <h3 class="texto-normal texto-neon1 apuntes1">
+                    DEF (FUNCIONES)
+                </h3>
+                <h4 class="texto-normal">
+                    El "def" al que yo le llamo "definir", sirve para "crear" o "definir" funciones, es decir, 
+                    crear un conjunto de acciones recopiladas en un mismo lugar para luego, 
+                    simplemente introducir su nombre y no tener que pegar todo el rato el codigo que queremos que se realice<br> 
+                    pongamos un ejemplo:
+                    <br><br>
+                    <div class="codigo">
+                        def saludo():
+                        <div class="tab1">
+                            print(Hola, que tal estás?)
+                        </div>
+                        <br>
+                        def si():
+                        <div class="tab1">
+                            print(¡Claro!)
+                        </div>
+                        <br>
+                        def no():
+                        <div class="tab1">
+                            print(No, ¡lo siento!)
+                        </div>
+                        <br>
+                        while True:
+                        <br><br>
+                        <div class="tab1">
+                            print(¿Qué quieres que haga?)
+                            print(Decir "hola", "afirmar" o "rechazar")<br>
+                            respuesta = input("> ").strip().lower()
+                            <br><br>
+                            if respuesta == "" or respuesta == respuesta.isdigit():
+                            <div class="tab1">
+                                print("No te he entendido, ¡volvamos a empezar!")
+                            </div>
+                            elif respuesta == "hola":
+                            <div class="tab1">
+                                saludo
+                            </div>
+                            elif respuesta == "afirmar":
+                            <div class="tab1">
+                                si
+                            </div>
+                            elif respuesta == "rechazar":
+                            <div class="tab1">
+                                no
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    En este caso, primero preguntamos que quiere, luego, cogemos su respuesta y dependiendo de esta, llamará a la función definida anteriormente para ejecutar el codigo.
+                </h4>
+            </div>
+        </div>
+        
+        <div class="desplegable">
             <button class="boton-desplegable">WHILE TRUE</button>
 
             <div class="contenido-desplegable">
@@ -84,7 +144,39 @@
                 </h4>
             </div>
         </div>
-        
+
+        <div class="desplegable">
+            <button class="boton-desplegable">INPUT</button>
+
+            <div class="contenido-desplegable">
+                <h3 class="texto-normal texto-neon1 apuntes1">
+                    INPUT()
+                </h3>
+                <h4 class="texto-normal">
+                    El input, sirve para "cojer" lo que introduce el usuario. 
+                    Esto sirve para coger sus respuestas y compararlas con algo 
+                    o simplemente para que no se ejecute todo de una y deba apretar el "Enter" 
+                    para que continue el código,<br> pongamos un ejemplo:
+                    <br><br>
+                    <div class="codigo">
+                        while True:
+                        <br><br>
+                        <div class="tab1">
+                            print("Texto que tu quieras")
+                            <br><br>
+                            respuesta = input("(s/n)").strip().lower()<br><br>
+                            if respuesta == "" or respuesta == respuesta.isdigit():<br>
+                            <span class="tab1">print("No válido")</span><br>
+                            elif respuesta == "n": <br>
+                            <span class="tab1">print("Oh, vale")</span><br>
+                            elif respuesta == "s":<br>
+                            <span class="tab1">print("¡Fantástico!")</span>
+                        </div>
+                    </div>
+                    <br>En este script, hemos hecho que tome la respuesta del usuario y lo compare para ver que responder.
+                </h4>
+            </div>
+        </div>
     
     </div>
 </body>
